@@ -3,5 +3,6 @@ pipeline:
     image: alpine
     commands:
       - cat /etc/resolv.conf
+      - echo "BBBBBB"
     when:
       status: [ success, failure ]
