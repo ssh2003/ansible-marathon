@@ -10,5 +10,6 @@ pipeline:
     commands:
       - cat /etc/resolv.conf
       - echo "BBBBBB"
+      - ls -la
     when:
       status: [ success, failure ]
