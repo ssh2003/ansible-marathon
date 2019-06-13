@@ -2,3 +2,4 @@ pipeline:
   test:
     commands:
       - echo "Hello world"
+      - echo "Test 1"
