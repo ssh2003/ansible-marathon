@@ -1,6 +1,7 @@
 pipeline:
-  test:
-    image: busybox
+  resolve:
+    image: alpine
     commands:
-      - echo "Hello world"
-      - echo "Test 1"
+      - cat /etc/resolv.conf
+    when:
+      status: [ success, failure ]
